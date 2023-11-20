@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background: linear-gradient(266deg, #202020 16.02%, #111 107.42%);
+}
+.bg{
+  background: linear-gradient(266deg, #202020 16.02%, #111 107.42%);
+}
+
+.rightbg{
+  background: linear-gradient(188deg, #9D6A3C 5.21%, #462A10 84.56%);
+  clip-path: polygon(49% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.navbg{
+  background: linear-gradient(266deg, #202020 16.02%, #111 107.42%);
+
+
+box-shadow: 13px 22px 33px 0px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(8px);
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger .inputToogle {
+  display: none;
+}
+
+.hamburger .svgg {
+  height: 3em;
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+.hamburger .inputToogle:checked + .svgg {
+  transform: rotate(-45deg);
+}
+
+.hamburger .inputToogle:checked + .svgg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+.bgCard{
+  background: linear-gradient(180deg, #AB6D34 0%, #7D430E 100%);
+}
