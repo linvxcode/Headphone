@@ -6,18 +6,6 @@ import Glow from "@/common/component/element/Glow";
 import Card from "@/common/component/element/Card";
 import { motion } from "framer-motion";
 
-const AnimateVariant = {
-  initial: {
-    opacity: 0,
-    translateY: 50,
-  },
-  animate: {
-    opacity: 1,
-    translateY: 0,
-    transition: { type: "spring", duration: 2, delay: 0.7 },
-  },
-};
-
 const Homepage = () => {
   const text = `HEADPHONE`;
   const text2 = " ACCESSORIES";
@@ -72,9 +60,6 @@ const Homepage = () => {
             </motion.div>
           </div>
           <motion.div
-            // variants={AnimateVariant}
-            // initial="initial"
-            // animate="animate"
           >
             <div className="overflow-hidden mt-5">
               {aboutText.map((item, index) => (
