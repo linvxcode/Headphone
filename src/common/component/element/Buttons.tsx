@@ -15,7 +15,7 @@ const Buttons = ({className= '', icons,icon, title}: ButtonsProps) => {
   const [hover, setHover] = useState<boolean>(false)
   return (
     <motion.button
-      initial={{width: '100%', height: '1px', padding: '0px'}}
+      initial={{width: '100%', height: '4px', padding: '0px'}}
       animate={{width: '40%' ,height: '40px',padding: '7px', transition: {type: 'spring', delay: 1, duration: 2}}}
       color="default"
       className={clsx("lg:hover:bg-neutral-100 flex justify-center bg-[#9D6A3C] overflow-hidden  rounded-lg relative group ", className)}

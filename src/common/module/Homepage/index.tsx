@@ -40,7 +40,7 @@ const Homepage = () => {
       <div className="flex relative z-[9] xl:px-32 px-10 flex-col xl:flex-row lg:justify-between items-start">
         <div className="">
           <div className="flex flex-col flex-wrap">
-            <motion.div className="md:text-6xl flex text-5xl overflow-hidden font-bold w-full text-white">
+            <motion.div className="md:text-6xl flex text-4xl overflow-hidden font-bold w-full text-white">
               <motion.h1
                 className="flex flex-col overflow-hidden"
                 initial={{ opacity: 0, translateY: -50}}

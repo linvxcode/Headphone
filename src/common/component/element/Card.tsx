@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Card = () => {
   return (
-    <motion.div className="xl:absolute relative items-center xl:bottom-[20px] py-10 xl:px-32 px-10 flex lg:flex-row flex-col gap-5 justify-center"
+    <motion.div className="xl:absolute z-[9] relative items-center xl:bottom-[20px] py-10 xl:px-32 px-10 flex lg:flex-row flex-col gap-5 justify-center"
     >
       {GridText.map((item, index) => (
         <motion.div
@@ -24,6 +24,19 @@ const Card = () => {
           </h2>
         </motion.div>
       ))}
+      <motion.div className="w-full h-[4px] bg-[#e6e5e55d] absolute z-[-9] md:block hidden"  
+      initial={{width: '0%'}}
+      whileInView={{width: '100%', transition: {type: "spring", duration: 1, bounce: 0.10}}}
+      viewport={{once:true}}
+      >
+
+      </motion.div>
+      <motion.div className="w-[4px] h-full top-[43px] bg-[#e6e5e55d] absolute z-[-9] md:hidden block left-[30px]"  
+      initial={{height: '10%'}}
+      whileInView={{height: '100%', transition: {type: "spring", duration: 1, bounce: 0.10}}}
+      viewport={{once:true}}
+      >
+      </motion.div>
     </motion.div>
   );
 };

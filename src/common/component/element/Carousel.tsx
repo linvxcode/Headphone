@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel, IconButton } from "@material-tailwind/react";
 import Image from "./Image";
 import ImageItem from "@/common/module/Homepage/component/ImageItem";
+import ImgScale from "./ImgScale";
 
 const Carousell = () => {
   return (
@@ -58,22 +59,26 @@ const Carousell = () => {
         )}
       >
         <ImageItem />
-        <Image
-          src="/img/pngwing3.png"
-          alt="headphone"
-          width={550}
-          height={550}
-          className="mt-[-100px]"
-          priority
-        />
-        <Image
-          src="/img/pngwing4.png"
-          alt="headphone"
-          width={550}
-          height={550}
-          className="mt-[-100px]"
-          priority
-        />
+        <ImgScale>
+          <Image
+            src="/img/pngwing3.png"
+            alt="headphone"
+            width={550}
+            height={550}
+            className="mt-[-100px]"
+            priority
+          />
+        </ImgScale>
+        <ImgScale>
+          <Image
+            src="/img/pngwing4.png"
+            alt="headphone"
+            width={550}
+            height={550}
+            className="mt-[-100px]"
+            priority
+          />
+        </ImgScale>
       </Carousel>
     </div>
   );
