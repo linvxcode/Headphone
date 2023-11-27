@@ -2,7 +2,7 @@ import React from "react";
 
 const Login = () => {
   return (
-    <button className="text-lg bg-[#111111] relative overflow-hidden group text-white py-[3px] px-5 rounded-full">
+    <button className="text-lg bg-[#111111] relative overflow-hidden group text-white py-[5px] px-5 rounded-full">
       <h1 className="group-hover:z-[9] lg:group-hover:text-black lg:transition-all lg:duration-300 relative">
         Login
       </h1>

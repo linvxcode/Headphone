@@ -38,7 +38,7 @@ const Carousell = () => {
             color="white"
             size="lg"
             onClick={handleNext}
-            className="!absolute outline outline-[1px] rounded-full z-[99] top-[80%] 2xl:!right-[200px] right-0 -translate-y-2/4"
+            className="!absolute outline outline-[1px] rounded-full z-[99] top-[80%] 2xl:!right-[100px] right-0 -translate-y-2/4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -61,16 +61,16 @@ const Carousell = () => {
         <Image
           src="/img/pngwing3.png"
           alt="headphone"
-          width={650}
-          height={650}
+          width={550}
+          height={550}
           className="mt-[-100px]"
           priority
         />
         <Image
           src="/img/pngwing4.png"
           alt="headphone"
-          width={650}
-          height={650}
+          width={550}
+          height={550}
           className="mt-[-100px]"
           priority
         />

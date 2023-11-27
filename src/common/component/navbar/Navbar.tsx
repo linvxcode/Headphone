@@ -21,7 +21,7 @@ const Navbar = () => {
     <div
       className={clsx(
         scrolled ? `navbg` : ``,
-        `w-full  transition-all duration-300 mx-auto max-w-[1500px] py-5 px-5 lg:px-10 fixed top-0 z-[99]`
+        `w-full  transition-all duration-300 mx-auto max-w-[1400px] py-5 px-10 xl:px-32 lg:px-10 fixed top-0 z-[99]`
       )}
     >
       <div className="flex flex-row justify-between items-center ">
